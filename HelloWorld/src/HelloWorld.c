@@ -3,6 +3,11 @@
 
 int main() {
 
-    printf("Hello, World!\n");
+    printf("Hello, Jenkins webhooks!\n");
+    printf("Let us do some addition...\n");
+
+    printf("Computing 11 + 5...");
+    int total = add(11,5);
+    print("The answer is: %d!\n", total);
     return 0;
 }
