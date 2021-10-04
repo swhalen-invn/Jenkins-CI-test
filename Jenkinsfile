@@ -1,11 +1,6 @@
 pipeline {
     agent { label 'Linux_64' }
     stages {
-        stage('Git') {
-            steps{
-                git 'https://github.com/swhalen-invn/Jenkins-CI-test.git'
-            }
-        }
         stage('Build') {
             steps {
                 sh 'echo "Building..."'
