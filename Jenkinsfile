@@ -1,9 +1,5 @@
 pipeline {
-    agent {
-        node {
-             label 'Linux_64'
-        }
-    }
+    agent any
     stages {
         stage('Build') {
             steps {
