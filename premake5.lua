@@ -9,10 +9,10 @@ project "HelloWorld"
 
     files { "HelloWorld/src/*.c", "HelloWorld/include/*.h" }
 
-    filter "configuration:Debug"
+    filter "configurations:Debug"
         defines { "DEBUG" }
         symbols "On"
 
-    filter "configuration:Release"
+    filter "configurations:Release"
         defines { "NDEBUG" }
         optimize "On"
