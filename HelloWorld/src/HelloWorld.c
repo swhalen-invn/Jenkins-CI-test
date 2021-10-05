@@ -12,7 +12,7 @@ int main() {
     int total = add(x, y);
     printf("The answer is: %d!!\n", total);
 
-    int a = 9;
+    int a = 11;
     int b = 6;
     printf("Computing %d x %d...", a, b);
     total = multiply(8,6);
