@@ -16,6 +16,6 @@ int main() {
 
     printf("Computing 8 x 6...");
     total = multiply(8,6);
-    printf("The answer is: %d!!!\n", total);
+    printf("The answer is: %d!!\n", total);
     return 0;
 }
