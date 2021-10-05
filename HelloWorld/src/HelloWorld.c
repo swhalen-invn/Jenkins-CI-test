@@ -8,6 +8,6 @@ int main() {
 
     printf("Computing 11 + 5...");
     int total = add(11,5);
-    printf("The answer is: %d!!!\n", total);
+    printf("The answer is: %d.\n", total);
     return 0;
 }
