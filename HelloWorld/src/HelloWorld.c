@@ -8,7 +8,7 @@ int main() {
 
     int x = 10;
     int y = 2;
-    printf("Computing %d + %d...", %x, y);
+    printf("Computing %d + %d...", x, y);
     int total = add(x, y);
     printf("The answer is: %d!!\n", total);
 
