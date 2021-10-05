@@ -6,16 +6,12 @@ int main() {
     printf("Hello, Jenkins webhooks!\n");
     printf("Let us do some addition...\n");
 
-
-    int x = 10;
-    int y = 2;
-    printf("Computing %d + %d...", %x, y);
-    int total = add(x, y);
-
+    printf("Computing 11 + 5...");
+    int total = add(11,5);
     printf("The answer is: %d!!\n", total);
 
     printf("Computing 8 x 6...");
     total = multiply(8,6);
-    printf("The answer is: %d!!!\n", total);
+    printf("The answer is: %d!!\n", total);
     return 0;
 }
