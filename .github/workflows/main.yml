@@ -30,6 +30,11 @@ jobs:
           chmod 777 vendor/bin/premake/premake5
           chmod +x scripts/Linux-Build.sh
           scripts/Linux-Build.sh
+      - name: Save build
+      - uses: actions/upload-artifact@v2
+        with:
+          name: bin-directory
+          path: bin/*  # or path/to/artifact
           
   test:
     
@@ -38,6 +43,14 @@ jobs:
     
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/download-artifact@v2
+        with:
+          name: my-artifact
+          path: bin
+    
+      - name: Display structure of downloaded files
+        run: ls -R
+        working-directory: bin
       - name: Run C code
         run: |
           chmod +x scripts/Linux-Run.sh
