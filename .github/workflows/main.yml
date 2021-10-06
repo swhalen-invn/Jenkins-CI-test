@@ -34,7 +34,7 @@ jobs:
       - name: Save build
         uses: actions/upload-artifact@v2
         with:
-          name: bin-directory
+          name: bin
           path: bin/*  # or path/to/artifact
           
   test:
