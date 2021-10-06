@@ -14,8 +14,10 @@ int main() {
 
     printf("The answer is: %d!!\n", total);
 
-    printf("Computing 8 x 6...");
-    total = multiply(8,6);
+    int a = 9;
+    int b = 6;
+    printf("Computing %d x %d...", a, b);
+    total = multiply(a,b);
     printf("The answer is: %d!!\n", total);
     return 0;
 }
