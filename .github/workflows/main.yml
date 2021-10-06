@@ -57,6 +57,7 @@ jobs:
       - name: Run C code
         run: |
           chmod +x scripts/Linux-Run.sh
+          chmod -R 777 bin
           scripts/Linux-Run.sh
     
           
