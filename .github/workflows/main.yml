@@ -37,6 +37,7 @@ jobs:
     needs: build
     
     steps:
+      - uses: actions/checkout@v2
       - name: Run C code
         run: |
           chmod +x scripts/Linux-Run.sh
